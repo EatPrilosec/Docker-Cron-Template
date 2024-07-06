@@ -1,14 +1,24 @@
 name: Publish Docker image
-
 on:
   workflow_dispatch:
-  
+
+
+
+
 env:
 #### ChangeMe #### ChangeMe #### ChangeMe #### ChangeMe #### ChangeMe #### ChangeMe #### ChangeMe 
 
-  IMAGE_NAME: Cron Docker Template Unmodified           #### ChangeMe #### ChangeMe #### ChangeMe 
+  IMAGE_NAME: docker-cron-template-nmodified           #### ChangeMe #### ChangeMe #### ChangeMe 
   
 #### ChangeMe #### ChangeMe #### ChangeMe #### ChangeMe #### ChangeMe #### ChangeMe #### ChangeMe   
+
+
+
+
+
+
+
+
 
 jobs:
   build:
