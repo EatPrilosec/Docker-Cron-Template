@@ -24,14 +24,14 @@ RUN rm -f           \
 
 RUN mkdir -p /opt
 #RUN chown 1000:1000 -R /opt
-WORKDIR /opt
+
 
 FROM base AS add
-ADD  --chmod=777 files* /opt/
+ADD --chmod=777 files* /opt/
 RUN chmod -R 777 /opt
 
 ENV CronSchedule="*/1 * * * *"
 ENV PUID="1000"
 ENV PGID="1000"
-
+WORKDIR /opt
 CMD ["/opt/cron_start.sh"]
